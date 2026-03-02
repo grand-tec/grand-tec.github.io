@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Spin & Decide - The ultimate app to help you make choices. Add options, set their weights, and spin the wheel!">
+    <title>Spin & Decide App | Grand Tec</title>
+    
+    <style>
+        /* Global Styles */
+        :root {
+            --primary-color: #0a7ea4; /* Matched from your app's theme */
+            --text-color: #11181C;
+            --bg-color: #f9fbfd;
+            --card-bg: #ffffff;
+        }
+
+        body {
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            line-height: 1.6;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        /* Hero Section */
+        header {
+            text-align: center;
+            padding: 40px 20px;
+            background-color: var(--card-bg);
+            border-radius: 20px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+            margin-top: 20px;
+        }
+
+        .logo {
+            width: 120px;
+            height: 120px;
+            border-radius: 25%; /* Rounded corners matching typical app icons */
+            box-shadow: 0 8px 16px rgba(0,0,0,0.1);
+            margin-bottom: 20px;
+        }
+
+        h1 {
+            font-size: 2.5rem;
+            margin: 0 0 10px 0;
+            color: var(--text-color);
+        }
+
+        .tagline {
+            font-size: 1.2rem;
+            color: #687076;
+            margin-bottom: 20px;
+            max-width: 600px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        /* Features Section */
+        .features {
+            margin: 50px 0;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+        }
+
+        .feature-card {
+            background: var(--card-bg);
+            padding: 25px;
+            border-radius: 16px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.03);
+            text-align: center;
+        }
+
+        .feature-card h3 {
+            color: var(--primary-color);
+            margin-top: 0;
+        }
+
+        /* Screenshots Section */
+        .screenshots-section {
+            text-align: center;
+            margin: 50px 0;
+        }
+
+        .screenshots-section h2 {
+            font-size: 2rem;
+            margin-bottom: 30px;
+        }
+
+        .screenshots-gallery {
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            flex-wrap: wrap;
+        }
+
+        .screenshot {
+            width: 100%;
+            max-width: 300px;
+            border-radius: 20px;
+            box-shadow: 0 10px 20px rgba(0,0,0,0.15);
+            border: 4px solid var(--card-bg);
+            transition: transform 0.3s ease;
+        }
+
+        .screenshot:hover {
+            transform: translateY(-5px);
+        }
+
+        /* Footer */
+        footer {
+            text-align: center;
+            padding: 30px 20px;
+            margin-top: 40px;
+            border-top: 1px solid #eaeaea;
+            font-size: 0.9rem;
+            color: #687076;
+        }
+
+        footer a {
+            color: var(--primary-color);
+            text-decoration: none;
+            font-weight: 600;
+        }
+
+        footer a:hover {
+            text-decoration: underline;
+        }
+
+        /* Responsive adjustments */
+        @media (max-width: 600px) {
+            h1 {
+                font-size: 2rem;
+            }
+            .tagline {
+                font-size: 1rem;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <header>
+            <img src="logo.png" alt="Spin & Decide Logo" class="logo">
+            <h1>Spin & Decide</h1>
+            <p class="tagline">Can't make up your mind? Let the wheel choose for you! Add your options, adjust their weights, and give it a spin.</p>
+        </header>
+
+        <section class="features">
+            <div class="feature-card">
+                <h3>Custom Options</h3>
+                <p>Add anything you want to decide on—whether it's what to eat, what movie to watch, or who pays the bill.</p>
+            </div>
+            <div class="feature-card">
+                <h3>Weighted Choices</h3>
+                <p>Really want to hit the gym but still want a chance to watch a movie? Assign higher weights (1-5) to favor your top choices.</p>
+            </div>
+            <div class="feature-card">
+                <h3>Fun & Fast</h3>
+                <p>Enjoy satisfying spin physics, a beautifully colorful interface, and a fun confetti celebration when a winner is picked!</p>
+            </div>
+        </section>
+
+        <section class="screenshots-section">
+            <h2>See it in action</h2>
+            <div class="screenshots-gallery">
+                <img src="screenshot-1.png" alt="Spin and Decide app interface with custom options" class="screenshot">
+                <img src="screenshot-2.png" alt="Spin and Decide wheel spinning and selecting a winner with confetti" class="screenshot">
+            </div>
+        </section>
+    </div>
+
+    <footer>
+        <p>&copy; 2026 Grand Tec. All rights reserved.</p>
+        <p>
+            <a href="privacy-policy.html">Privacy Policy</a>
+        </p>
+    </footer>
+
+</body>
+</html>
